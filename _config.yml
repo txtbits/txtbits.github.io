@@ -24,6 +24,7 @@ permalink: /blog/:year/:month/:day/:title.html
 twitter_username: txtbits
 github_username: txtbits
 linkedin_username: christianforcadavitalla
+google_analytics: UA-49855532-1
 
 # Build settings
 markdown: kramdown
