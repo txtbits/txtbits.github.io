@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Entradas" }}</h2>
+    <ul class="post-list">
+      {%- for post in paginator.posts -%}
+      <li>
+        <span class="post-meta">
+          {{ post.date | date: "%-d" }} de
+          {% assign m = post.date | date: "%-m" | minus: 1 %}
+          {{ site.months[m] }} de
+          {{ post.date | date: "%Y" }}
+        </span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+          <a href="{{ post.url | relative_url }}">Leer más »</a>
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    <!-- Pagination links -->
+    <div class="pagination pull-right">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="previous">Anterior</a>
+      {% else %}
+        <span class="previous">Anterior</span>
+      {% endif %}
+      <span class="page_number">Página: {{ paginator.page }} de {{ paginator.total_pages }}</span>
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="next">Siguiente</a>
+      {% else %}
+        <span class="next">Siguiente</span>
+      {% endif %}
+    </div>
+    <div class="clearfix"></div>
+    <p class="rss-subscribe pull-right">Suscríbete <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+
+</div>

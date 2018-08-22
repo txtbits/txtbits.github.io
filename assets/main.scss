@@ -1,0 +1,257 @@
+---
+---
+
+@import "minima";
+
+* {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.svg-icon { // Fix * box-sizing
+	padding-right: 0;
+	margin-right: 5px
+}
+
+.pull-left {
+	float: left !important;
+}
+.pull-right {
+	float: right !important;
+}
+
+.clearfix {
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+.no-margin {
+	margin: 0;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.img-responsive {
+	display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.margin-auto {
+	margin: 0 auto;
+}
+
+.social-media-list {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+    display: inline-block;
+
+    & > li {
+    	display: inline-block;
+    	padding-right: 5px;
+    	padding-left: 5px;
+	}
+
+	a {
+		svg:hover {
+			fill: #2a7ae2;	
+		}
+	}
+}
+
+/*
+	Portfolio
+*/
+
+// Define base and accent colors
+$base-color: #3498db;
+$base-color-hover: darken($base-color, 10%);
+
+@mixin transition($duration: 0.5s, $func: ease, $property: all) {
+    transition: #{$duration} #{$func} #{$property};
+}
+
+#lead {
+    position: relative;
+    height: 100vh;
+    min-height: 500px;
+    max-height: 1080px;
+    background: url(/assets/img/lead-bg.jpg);
+    background-size: cover;
+    padding: 15px;
+    overflow: hidden;
+}
+
+#lead-content {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    h1, h2 {
+        margin: 0;
+    }
+
+    h1 {
+        color: #fff;
+        font-weight: 900;
+        font-size: 5em;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        line-height: 0.9em;
+    }
+
+    h2 {
+        color: lighten($base-color, 25%);
+        font-weight: 500;
+        font-size: 2.25em;
+    }
+
+    img {
+        border-radius: 50%;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        -webkit-transition: all .5s ease-in-out;
+        margin-bottom: 1em;
+        &:hover {
+            filter: none;
+            -webkit-filter: grayscale(0%);
+        }
+    }
+
+    .social {
+    	a {
+    		.svg-icon {
+    			fill: #fff;
+	    	}
+		    &:hover {
+		    	.svg-icon {
+		    		fill: #374054;
+		    	}
+		    } 
+    	}
+    	.separator {
+		    display: inline-block;
+			height: 8px;
+		    color: #fff;
+		    font-weight: bold;
+		    border: 1px solid #fff;
+		    margin: 0 1em;
+    	}
+    	.blog {
+    		display: inline-block;
+    		color: #fff;
+    		font-weight: bold;
+		    padding: 0 .5em;
+    	}
+	}
+
+}
+
+#lead-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba($base-color-hover, 0.8);
+    z-index: 1;
+}
+
+.btn-rounded-white {
+    display: inline-block;
+    color: #fff;
+    padding: 15px 25px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    @include transition();
+
+    &:hover {
+        color: $base-color !important;
+        background: #fff;
+        text-decoration: none;
+    }
+    &:visited {
+    	color: #fff;
+    }
+}
+
+// Medium Devices
+@media only screen and (max-width : 992px) {
+
+    #lead {
+        height: auto;
+        min-height: auto;
+        max-height: auto;
+        padding: 100px 15px;
+    }
+
+    #lead-content {
+        position: relative;
+        transform: none;
+        left: auto;
+        top: auto;
+
+        h1 {
+            font-size: 3em;
+        }
+
+        h2 {
+            font-size: 1.75em;
+        }
+    }
+
+}
+
+// Small Devices
+@media only screen and (max-width : 768px) {
+
+    #lead-content {
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.3em;
+        }
+
+        a {
+            padding: 10px 20px;
+        }
+    }
+
+}
+
+// Extra Small Devices
+@media only screen and (max-width : 480px) {
+
+    #lead-content {
+        h1 {
+            font-size: 1.5em;
+        }
+
+        h2 {
+            font-size: 1em;
+        }
+
+        a {
+            font-size: 0.9em;
+            padding: 5px 10px;
+        }
+    }
+
+}
