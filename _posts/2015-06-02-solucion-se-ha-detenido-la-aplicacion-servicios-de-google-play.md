@@ -3,10 +3,11 @@ layout: post
 title: "[SOLUCIÓN] Se ha detenido la aplicación Servicios de Google Play"
 date: 2015-06-02 17:33:43 +0200
 categories: Android
+redirect_from: "/2015/06/02/solucion-se-ha-detenido-la-aplicacion-servicios-de-google-play/"
 ---
 La entrada del título "Se ha detenido la aplicación Servicios de Google Play" nos introduce de lleno en el problema, un error bastante común cuando actualizamos la versión de Android de nuestro dispositivo, o cuando instalamos custom ROMs con o sin Google Apps incrustadas en la ROM.
 
-![Se ha detenido la aplicación Servicios de Google Play](http://txtbits.com/wp-content/uploads/2015/06/detenido.png)
+![Se ha detenido la aplicación Servicios de Google Play]({{"/assets/img/posts/2015/06/detenido.png" | absolute_url }}){: .img-responsive .margin-auto }
 
 El problema estriba en la limpieza de los datos almacenados en el dispositivo de una versión anterior de la aplicación Servicios de Google Play, la cual no se realiza correctamente.
 

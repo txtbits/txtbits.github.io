@@ -3,6 +3,7 @@ layout: post
 title: "Solución: error while loading shared libraries: libudev.so.0: cannot open shared object file:"
 date: 2014-11-21 12:41:16 +0200
 categories: Linux
+redirect_from: "/2014/11/21/solucion-error-loading-shared-libraries-libudev-0-open-shared-object-file/"
 ---
 Al instalar algunos programas en Linux, podemos encontramos con la sorpresa de que tras la instalación, la aplicación no arranca. Un primer paso para elaborar un diagnóstico es, a través de un terminal lanzar el ejecutable y ver si devuelve algún tipo de error.
 

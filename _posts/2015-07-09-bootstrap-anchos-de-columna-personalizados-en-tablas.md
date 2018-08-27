@@ -3,6 +3,7 @@ layout: post
 title: "Bootstrap Framework: anchos de columna personalizados en tablas."
 date: 2015-07-09 19:39:14 +0200
 categories: Diseño
+redirect_from: "/2015/07/09/bootstrap-anchos-de-columna-personalizados-en-tablas/"
 ---
 En la versión 3 de [Bootstrap](https://getbootstrap.com/docs/3.3/) apareció la posibilidad de hacer las tablas responsive y adaptar de forma dinámica el contenido. Sin embargo, no hay mayor flexibilidad en cuanto a la manipulación de tamaño de las columnas. A continuación, explico un truco muy simple para los que se han topado con el problema de querer tener anchos de columna personalizados en tablas en Bootstrap.
 

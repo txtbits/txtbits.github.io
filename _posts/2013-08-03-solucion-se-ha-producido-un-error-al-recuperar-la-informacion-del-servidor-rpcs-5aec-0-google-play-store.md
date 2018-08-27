@@ -3,6 +3,7 @@ layout: post
 title: "[SOLUCIÓN] \"Se ha producido un error al recuperar la información del servidor. [RPC:S-5:AEC-0]\" Google Play Store"
 date: 2013-08-03 12:20:00 +0200
 categories: Android
+redirect_from: "/2013/08/03/solucion-se-ha-producido-un-error-al-recuperar-la-informacion-del-servidor-rpcs-5aec-0-google-play-store/"
 ---
 Hoy escribo estas líneas para tratar de solucionar este error repentino que me surgió en mi tablet Nexus 10 y que puede traer algún que otro dolor de cabeza.
 

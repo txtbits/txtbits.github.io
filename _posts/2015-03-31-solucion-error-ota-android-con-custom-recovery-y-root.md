@@ -3,6 +3,7 @@ layout: post
 title: "[SOLUCIÓN] Error OTA Android con custom recovery y root"
 date: 2015-03-31 18:37:22 +0200
 categories: Android
+redirect_from: "/2015/03/31/solucion-error-ota-android-con-custom-recovery-y-root/"
 ---
 **IMPORTANTE:** Este tema es para usuarios avanzados con conocimientos sobre Custom ROMs Android. He condensado los pasos a seguir para solucionar el error del título. No me hago responsable de posibles bricks, pero estoy abierto a cualquier petición de ayuda. 🙂
 

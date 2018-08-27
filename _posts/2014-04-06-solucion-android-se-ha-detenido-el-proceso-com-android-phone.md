@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "[SOLUCIÓN] Se ha detenido el proceso com.android.phone - Android"
+title: "[SOLUCIÓN] Se ha detenido el proceso com.android.phone"
 date: 2014-04-06 12:35:13 +0200
 categories: Android
+redirect_from: "/2014/04/06/solucion-android-se-ha-detenido-el-proceso-com-android-phone/"
 ---
 En esta entrada os voy a contar un problema con el que tuve que lidiar hace bastante tiempo, cuando mi Nexus 4, sé actualizó a la versión 4.3 de Android sufriendo el fatídico error.
 
